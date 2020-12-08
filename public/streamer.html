@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Streamer</title>
+
+  <meta name="description" content="WebRTC Stream">
+  <link href="/live.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <div id="camview">
+      <video id="video-convidado" width="100%" height="100%" playsinline autoplay></video>
+      <div id="cambottom">
+        <video id="video-host" width="100%" playsinline autoplay muted></video>
+      </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+    <script src="/streamer.js"></script>
+</body>
+
+</html>
